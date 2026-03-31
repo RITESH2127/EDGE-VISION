@@ -1,12 +1,13 @@
 <div align="center">
-  
-  # 👁️ EdgeVision
-  **An AI-Powered Real-Time Monitoring & Geospatial Intelligence Platform**
 
-  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-  ![face-api.js](https://img.shields.io/badge/face--api.js-AI-FF6F00?style=for-the-badge)
-  ![MapGL](https://img.shields.io/badge/react--map--gl-Geospatial-4CAF50?style=for-the-badge)
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+# 👁️ EdgeVision
+
+**An AI-Powered Real-Time Monitoring & Geospatial Intelligence Platform**
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
+![face-api.js](https://img.shields.io/badge/face--api.js-AI-FF6F00?style=for-the-badge)
+![MapGL](https://img.shields.io/badge/react--map--gl-Geospatial-4CAF50?style=for-the-badge)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 </div>
 
@@ -14,7 +15,9 @@
 
 ## 📖 Project Description
 
-**EdgeVision** is a cutting-edge web application designed for intelligent surveillance, location tracking, and real-time facial analysis. Built with a modern React architecture, it seamlessly integrates live webcam feeds with advanced machine learning models in the browser to detect and process facial data. Coupled with interactive geospatial mapping, EdgeVision provides a comprehensive dashboard for situational awareness and monitoring. 
+**EdgeVision** is a cutting-edge web application designed for intelligent surveillance, location tracking, and real-time facial analysis. Built with a modern React architecture, it seamlessly integrates live webcam feeds with advanced machine learning models in the browser to detect and process facial data.
+
+Coupled with interactive geospatial mapping, EdgeVision provides a comprehensive dashboard for situational awareness and monitoring.
 
 Whether it's for advanced security analytics, spatial tracking, or real-time video intelligence, this platform delivers a visually stunning, highly interactive user interface designed for modern web standards.
 
@@ -22,89 +25,136 @@ Whether it's for advanced security analytics, spatial tracking, or real-time vid
 
 ## ✨ Features
 
-- **Real-Time Facial Recognition:** Utilizes `face-api.js` for on-the-fly face detection, landmark tracking, and facial feature analysis directly in the browser.
-- **Live Video Feed Integration:** Captures and processes real-time webcam streams using `react-webcam`.
-- **Geospatial Mapping:** Interactive, high-performance map visualizations powered by `react-map-gl` for location-based intelligence and tracking.
-- **Media Playback & Analysis:** Support for custom video analysis and media playback via `react-player`.
-- **Modern UI/UX:** A highly responsive, visually appealing front-end designed to handle complex data streams gracefully.
-- **Client-Side Processing:** Leverages Web Workers (`worker-loader`) to maintain a smooth, non-blocking user interface during heavy AI computations.
+* 🔍 **Real-Time Facial Recognition**
+  Uses `face-api.js` for live face detection, landmark tracking, and facial analysis directly in the browser.
+
+* 🎥 **Live Video Feed Integration**
+  Captures and processes webcam streams using `react-webcam`.
+
+* 🗺️ **Geospatial Mapping**
+  Interactive maps powered by `react-map-gl` for tracking and visualization.
+
+* 🎬 **Media Playback & Analysis**
+  Supports video playback and analysis via `react-player`.
+
+* 🎨 **Modern UI/UX**
+  Clean, responsive interface built for performance and usability.
+
+* ⚡ **Client-Side Processing**
+  Uses Web Workers to ensure smooth performance during heavy AI processing.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework:** React 18 (`react`, `react-dom`)
-- **Routing:** React Router (`react-router-dom`, `react-router-hash-link`)
-- **AI / Computer Vision:** `face-api.js`
-- **Mapping & Geospatial:** `react-map-gl`
-- **Media & Hardware:** `react-webcam`, `react-player`
-- **HTTP Client:** `axios`
-- **Testing:** React Testing Library (`@testing-library/react`, `@testing-library/jest-dom`)
+* **Frontend:** React 18 (`react`, `react-dom`)
+* **Routing:** React Router (`react-router-dom`, `react-router-hash-link`)
+* **AI / Computer Vision:** `face-api.js`
+* **Mapping:** `react-map-gl`
+* **Media:** `react-webcam`, `react-player`
+* **HTTP Client:** `axios`
+* **Testing:** React Testing Library
 
 ---
 
 ## 🚀 Installation & Setup
 
-Follow these steps to get the project up and running on your local machine.
+### 📌 Prerequisites
 
-### Prerequisites
-- Node.js (v14 or higher recommended)
-- npm or yarn package manager
+* Node.js (v14 or higher recommended)
+* npm or yarn
 
-### Steps
+---
+
+### ⚙️ Steps
 
 1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/your-username/edgevision.git](https://github.com/your-username/edgevision.git)
-   cd edgevision
-   Install dependencies
 
-2. Bash
+```bash
+git clone https://github.com/your-username/edgevision.git
+cd edgevision
+```
+
+2. **Install dependencies**
+
+```bash
 npm install
-Configure Environment Variables
-Create a .env file in the root directory and add any necessary API keys (e.g., Mapbox token for react-map-gl):
+```
 
-3. Code snippet
+3. **Configure environment variables**
+
+Create a `.env` file in the root directory:
+
+```env
 REACT_APP_MAPBOX_TOKEN=your_mapbox_access_token_here
-Start the development server
+```
 
-4. Bash
-npm run start
-Access the application
-Open your browser and navigate to http://localhost:3000.
-.
+4. **Run the development server**
 
-💻 Usage
-Dashboard Overview: Upon launching, navigate to the main dashboard to view the map interface and camera feeds.
+```bash
+npm start
+```
 
-Webcam Access: Grant the browser permission to access your webcam when prompted to initialize the face-api.js detection models.
+5. **Open the app**
 
-Map Navigation: Use the interactive map to track flagged events or monitored locations.
+Go to:
+👉 http://localhost:3000
 
-Analysis: Review captured data streams or play back specific video segments for further insights.
+---
 
-📂 Project Structure
+## 💻 Usage
 
+* **Dashboard:** View real-time map and video feeds.
+* **Webcam Access:** Allow camera permissions for facial detection.
+* **Map Interaction:** Track locations and events visually.
+* **Analysis:** Review captured video and data insights.
+
+---
+
+## 📂 Project Structure
+
+```
 edgevision/
-├── public/                 # Static assets, index.html, and face-api models
+├── public/                 # Static assets & ML models
 ├── src/
-│   ├── components/         # Reusable UI components (Map, Webcam, VideoPlayer)
-│   ├── pages/              # Route views (Dashboard, Settings, etc.)
-│   ├── services/           # API calls (Axios) and ML logic (face-api configs)
-│   ├── workers/            # Web worker scripts for off-thread processing
-│   ├── App.js              # Main application entry point
-│   └── index.js            # React DOM rendering
-├── .gitignore              # Ignored files and directories
-├── LICENSE.txt             # MIT License
-├── package.json            # Project metadata and dependencies
-└── package-lock.json       # Dependency lockfile
+│   ├── components/         # UI components
+│   ├── pages/              # Application pages
+│   ├── services/           # API & ML logic
+│   ├── workers/            # Web workers
+│   ├── App.js              # Main app
+│   └── index.js            # Entry point
+├── .gitignore
+├── LICENSE.txt
+├── package.json
+└── package-lock.json
+```
 
+---
 
-🔮 Future Improvements
-NLP-Powered Querying: Integrate Natural Language Processing to allow users to search event logs using conversational text.
+## 🔮 Future Improvements
 
-Backend Infrastructure: Implement a robust backend architecture for persistent storage of surveillance data and user authentication.
+* 🤖 **NLP-Based Search**
+  Query event logs using natural language.
 
-Advanced Data Structures: Optimize the event-logging system using more efficient data structures to handle high-frequency streams of tracking data.
+* 🗄️ **Backend Integration**
+  Add database & authentication system.
 
-Multi-Camera Support: Expand the UI to support and tile multiple concurrent webcam/IP camera feeds.
+* ⚙️ **Performance Optimization**
+  Improve handling of high-frequency data streams.
+
+* 📷 **Multi-Camera Support**
+  Enable multiple camera feeds in UI.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+⭐ *If you like this project, consider giving it a star!*
+
+</div>

@@ -57,3 +57,18 @@ Follow these steps to get the project up and running on your local machine.
    ```bash
    git clone [https://github.com/your-username/edgevision.git](https://github.com/your-username/edgevision.git)
    cd edgevision
+   Install dependencies
+
+2. Bash
+npm install
+Configure Environment Variables
+Create a .env file in the root directory and add any necessary API keys (e.g., Mapbox token for react-map-gl):
+
+3. Code snippet
+REACT_APP_MAPBOX_TOKEN=your_mapbox_access_token_here
+Start the development server
+
+4. Bash
+npm run start
+Access the application
+Open your browser and navigate to http://localhost:3000.

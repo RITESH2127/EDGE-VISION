@@ -72,3 +72,39 @@ Start the development server
 npm run start
 Access the application
 Open your browser and navigate to http://localhost:3000.
+.
+
+💻 Usage
+Dashboard Overview: Upon launching, navigate to the main dashboard to view the map interface and camera feeds.
+
+Webcam Access: Grant the browser permission to access your webcam when prompted to initialize the face-api.js detection models.
+
+Map Navigation: Use the interactive map to track flagged events or monitored locations.
+
+Analysis: Review captured data streams or play back specific video segments for further insights.
+
+📂 Project Structure
+
+edgevision/
+├── public/                 # Static assets, index.html, and face-api models
+├── src/
+│   ├── components/         # Reusable UI components (Map, Webcam, VideoPlayer)
+│   ├── pages/              # Route views (Dashboard, Settings, etc.)
+│   ├── services/           # API calls (Axios) and ML logic (face-api configs)
+│   ├── workers/            # Web worker scripts for off-thread processing
+│   ├── App.js              # Main application entry point
+│   └── index.js            # React DOM rendering
+├── .gitignore              # Ignored files and directories
+├── LICENSE.txt             # MIT License
+├── package.json            # Project metadata and dependencies
+└── package-lock.json       # Dependency lockfile
+
+
+🔮 Future Improvements
+NLP-Powered Querying: Integrate Natural Language Processing to allow users to search event logs using conversational text.
+
+Backend Infrastructure: Implement a robust backend architecture for persistent storage of surveillance data and user authentication.
+
+Advanced Data Structures: Optimize the event-logging system using more efficient data structures to handle high-frequency streams of tracking data.
+
+Multi-Camera Support: Expand the UI to support and tile multiple concurrent webcam/IP camera feeds.
